@@ -1,0 +1,33 @@
+# Database creation
+
+create database TodoApp
+
+create table Notes (
+  id bigint identity(1, 1),
+  [description] nvarchar(max)
+)
+
+insert into notes values ('buy fruits')
+insert into notes values ('do laundry')
+
+select * from notes
+
+--
+
+# Create a new Vite project with javascript, project name: 'todoapp'
+npm create vite@latest
+
+# Navigate to the project directory
+cd todoapp
+
+# Install dependencies
+npm install
+
+# Check if axios is installed, should not be empty (or check the package.json)
+npm list axios
+
+# Install axios if not installed
+npm install axios
+
+# Start the development server
+npm run dev
